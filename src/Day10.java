@@ -1,7 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
-import java.util.function.Predicate;
 
 public class Day10 {
 
@@ -51,8 +50,8 @@ public class Day10 {
     }
 
     private static int bitmaskBFS(int[] buttonMasks, int targetMask) {
-        ArrayDeque<Integer> q = new ArrayDeque<>();
-        HashMap<Integer, Integer> dist = new HashMap<>();
+        Queue<Integer> q = new ArrayDeque<>();
+        Map<Integer, Integer> dist = new HashMap<>();
         int start = 0;
         q.add(start);
         dist.put(start, 0);
